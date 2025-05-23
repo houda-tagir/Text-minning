@@ -138,7 +138,7 @@ Make sure the tone is academic but easy to read
 ⚠️ Final Output Format:
 Provide the final report as:
 
-✅ .pdf OR .docx OR .tex (LaTeX)
+l article doit contenir tout les section qu un qrticle contient abstract resumee itro conclusion related work .......
 
 No source code in the report – only explanations and analysis
 
