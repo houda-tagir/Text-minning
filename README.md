@@ -1,81 +1,145 @@
-I need a complete technical report in French about my project: Detection of Fake Arabic News, using the models I applied.
+Generate a complete technical report in French (approx. 15 pages) about my project:
+"Détection de fausses nouvelles en arabe (Fake Arabic News Detection)", using the machine learning and deep learning models I applied.
 
-📦 Dataset Details:
+📦 Dataset Information:
 Dataset used: AFND (Arabic Fake News Dataset)
 
-It contains 10,000 samples
+Contains 10,000 samples
 
-Fields:
+Two fields only:
 
-df['content'] includes the text + title
+df['content']: includes title + text
 
-df['label'] includes 0 = not credible, 1 = credible
+df['label']: binary class – 0 = not credible, 1 = credible
 
-You can refer to the output of df.head() to understand the structure.
+Please analyze the sample data using the output of df.head() for understanding.
 
-📁 Project Source:
-this project includes:
+📁 Source Materials:
+The entire project is in this GitHub repo:
+📎 https://github.com/houda-tagir/Text-minning/tree/main
 
-Source code (Jupyter notebook)
+It contains:
 
-Results
+A .ipynb file (with all processing and models used)
 
-Diagrams
+Results (accuracy, F1, confusion matrix)
 
-My proposed report structure
+Visual diagrams
 
-An instruction file (Instruction.txt or similar)
+A text file describing the structure of the report
 
-✅ Objectives:
-Please generate a complete technical report based on the content of the abstract should be in a page and introductionas the conclusion related work etc like the repport we find in google scholar  :
+README or notes
 
-The .ipynb file
+✅ Instructions for Report:
+⬇️ Structure to Follow:
+The report must include the following sections, in clear French, using a noun + verb + complement structure:
 
-The instruction file
+Résumé (Abstract) – ~1 page
+Brief overview of the project, dataset, objective, models used, and main results.
 
-The project structure
+Introduction
+Introduce the problem of fake news in the Arabic world. Mention why it is important to detect fake news in Arabic specifically. Define fake news. Mention the role of NLP and machine learning.
 
-📊 Report Requirements:
-The report must include:
+État de l’art (Related Work)
+Briefly summarize existing approaches to fake news detection (especially in Arabic). Refer to the following articles and cite properly:
 
-A pipeline diagram
-
-A process diagram
-
-A flowchart (or any relevant UML/activity diagram)
-
-Follow the structure I provided
-
-Take inspiration from the architecture of the sample reports/articles I listed below
-
-✍️ Language Style:
-Use a simple and clear French writing style
-
-Follow noun + verb + complement structure
-
-Avoid complex sentence structures (to make it seem more human-written and less AI-generated)
-
-📚 References (for inspiration & citation if needed):
-Do not copy directly — only quote or paraphrase with proper citations:
-
-Enhancing Arabic Fake News Detection: Evaluating Data Balancing Techniques
+Enhancing Arabic Fake News Detection
 
 AutoKeras for Fake News Identification in Arabic
 
 Scientific Reports – Arabic Fake News Detection
 
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5135639
+SSRN articles provided
 
-⚠️ Important Notes:
-Use the GitHub repo as the main source of truth.
+Description du jeu de données (Dataset Description)
+Describe the AFND dataset, its structure (title+text and binary label), language, and examples.
 
-All figures and diagrams should visually explain the system architecture, data flow, and model process.
+Prétraitement des données (Data Preprocessing)
+Explain preprocessing steps used, including:
 
-Output must be:
+Tokenization
 
-Original
+Normalization
 
-Written in French
+Stopword removal
 
-Well-structured, easy to read
- help me to write a good report should not include the code it just talk about preprcessing and comre the results
+Stemming or lemmatization (if done)
+
+Représentation des textes (Text Representation)
+Mention the two approaches tried:
+
+TF-IDF (Term Frequency-Inverse Document Frequency)
+➤ Define and explain how it works.
+
+ATC-TF-IDF (Augmented Term Frequency × Cosine normalization)
+➤ Define this custom method and explain how it improves text representation (weighting terms better based on category).
+
+Architecture du système (System Architecture)
+Include:
+
+A pipeline diagram (from raw data to results)
+
+A flowchart (end-to-end steps)
+
+A UML or activity diagram (to describe model training or system logic)
+
+Modèles utilisés (Models Used)
+Mention each model you used (e.g., SVM, Naive Bayes, CNN, LSTM, Bi-GRU, etc.)
+Briefly describe each model (no math, just concept). Explain what you expected from each.
+
+Évaluation et résultats (Evaluation and Results)
+Compare the performance of the models using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+Confusion Matrix
+Present results in tables or charts, and clearly compare performance with TF-IDF vs. ATC-TF-IDF.
+
+Discussion
+Interpret the results. Which model performed best? Did ATC-TF-IDF improve the classification? What are the limitations?
+
+Conclusion et perspectives
+Summarize the key findings. Mention potential improvements (e.g., transformer models, better embeddings, data augmentation).
+
+Références
+Use the articles listed. Cite all sources properly in APA or another academic style.
+Example:
+
+Ameen et al. (2024) propose a framework to balance Arabic fake news datasets using oversampling. [source]
+
+📊 Diagrams and Figures:
+Include (you can extract or recreate from the GitHub repo):
+
+✅ Pipeline diagram (e.g., preprocessing → feature extraction → model training → evaluation)
+
+✅ Flowchart of system logic
+
+✅ Process diagram for preprocessing or model selection
+
+✅ Comparison tables or bar charts for model performance
+
+✍️ Language Style:
+The report must be in French
+
+Use simple grammar: noun + verb + complement
+
+Avoid technical jargon where possible (or explain it briefly)
+
+Avoid sounding like AI or GPT output
+
+Make sure the tone is academic but easy to read
+
+⚠️ Final Output Format:
+Provide the final report as:
+
+✅ .pdf OR .docx OR .tex (LaTeX)
+
+No source code in the report – only explanations and analysis
+
+All visual content must support the discussion
