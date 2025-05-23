@@ -1,4 +1,4 @@
-Generate a complete technical report in French (approx. 15 pages) about my project:
+Generate a complete article in French (approx. 15 pages) about my project:
 "Détection de fausses nouvelles en arabe (Fake Arabic News Detection)", using the machine learning and deep learning models I applied.
 
 📦 Dataset Information:
