@@ -78,4 +78,4 @@ Original
 Written in French
 
 Well-structured, easy to read
-
+ help me to write a good report should not include the code it just talk about preprcessing and comre the results
