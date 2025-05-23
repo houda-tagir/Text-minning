@@ -14,10 +14,7 @@ df['label'] includes 0 = not credible, 1 = credible
 You can refer to the output of df.head() to understand the structure.
 
 📁 Project Source:
-I’ve provided a GitHub repository that contains everything related to my project:
-https://github.com/houda-tagir/Text-minning/tree/main
-
-It includes:
+this project includes:
 
 Source code (Jupyter notebook)
 
@@ -30,7 +27,7 @@ My proposed report structure
 An instruction file (Instruction.txt or similar)
 
 ✅ Objectives:
-Please generate a complete technical report based on the content of:
+Please generate a complete technical report based on the content of the abstract should be in a page and introductionas the conclusion related work etc like the repport we find in google scholar  :
 
 The .ipynb file
 
